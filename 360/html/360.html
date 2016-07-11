@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/360.css">
+	<script>
+	Window.onload = function(){
+		var oLeft = document.getElementById("left");
+		var oRight = document.getElementById("right");
+		var oPicture = document.getElementById("picture");
+		var oLi = oPicture.getElementsByTagName('li');
+
+		var num=0;
+		oLi[num].style.zIndex="1";
+		oRight.onclick = function(){
+			num++;
+			if(num>3){
+				num = 0;
+			}
+			for( var i=0;i<oLi.length;i++){
+				oLi[i].style.zIndex="-1";
+			}
+			oLi[num].style.zIndex="1";
+		};
+		oLeft.onclick = function(){
+			num--;
+			if(num<0){
+				num = 3;
+			}
+			for( var i=0;i<oLi.length;i++){
+				oLi[i].style.zIndex = "-1";
+			}
+			oLi[num].style.zIndex = "1";
+		};
+	}
+
+	</script>
+</head>
+<body>
+	<div>
+		<div class="header">
+			<a href="#" class="head1">中文版</a>
+			<a href="#" class="head2">Golbal</a>
+			<a href="#" class="head4">注册</a>
+			<a href="#" class="head3">登录</a>
+		</div>
+		<div class="banner">
+			<img src="../image/logo.png" alt=""/>
+			<a href="#">电脑软件</a>
+			<a href="#">手机软件</a>
+			<a href="#">360商城</a>
+			<a href="#">安全理赔</a>
+			<a href="#">个人服务</a>
+			<a href="#">企业服务</a>
+			<a href="#">游戏</a>
+			<a href="#">论坛</a>
+			<div class="sou"></div>
+			<!-- <button class="but">搜一下</button> -->
+		</div>
+		<div class="main">
+			<ul id="picture">
+				<span id="left">&lt</span>
+				<span id="right">&gt</span>
+
+				<li><img src="../image/1.jpg" alt="" width="858px" height="398px" /></li>
+				<li><img src="../image/2.jpg" alt="" width="858px" 
+	height="398px" /></li>
+				<li><img src="../image/3.jpg" alt="" width="858px" 
+	height="398px" /></li>
+				<li><img src="../image/4.jpg" alt="" width="858px" 
+	height="398px" /></li>
+			</ul>
+		</div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body{
+	line-height: 1.5;
+	color: #333;
+	font-family: arial,"微软雅黑","黑体",sans-serif;
+	font-size:14px;
+}
+.header{
+	background:#f5f5f5;
+	height:36px;
+	margin:0px auto;
+}
+.header a{
+	display: block;
+}
+.header a:link{
+	color:#999;
+}
+.header a:hover{
+	color:#23ac38;
+	cursor:pointer;
+}
+.header .head1:link{
+	color:#23ac38; 
+}
+.header .head1,.head2{
+	float: left;
+	margin:0px 15px;
+	line-height: 36px;
+}
+.header .head3,.head4{
+	float: right;
+	margin:0px 15px;
+	line-height: 36px;
+}
+
+.banner{
+	height:120px;
+
+	
+
+}
+.banner img{
+	cursor: pointer;
+	vertical-align: middle;
+	display: block;
+	float: left;
+	margin:28px 20px;
+}
+.banner a:link{
+	color: #333;
+	display: block;
+	font-size: 17px;
+	float: left;
+	line-height: 120px;
+	padding:0 15px;
+}
+.banner a:visited{
+	color: #333;
+}
+.banner a:hover{
+	cursor: pointer;
+	color: #23ac38;
+}
+.banner .sou{
+	border:solid 2px #23ac38;
+	float:left;
+	width: 204px;
+	height:36px;
+	margin:40px 0px;
+}
+.banner .but{
+	color: #fff;
+	display: block;
+	background:#23ac38;
+	width: 90px;
+	height:36px;
+	margin-top: 15px;
+	float: left;
+}
+.main #picture{
+	width:858px;
+	height:398px;
+	position: relative;
+}
+.main  img{
+	position: absolute;
+}
+.main #left,#right{
+	position: absolute;
+	width:40px;
+	background:black;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	margin-top: 164px;
+	opacity: 0.8;
+
+}
+.main #left{
+	left:0;
+} 
+.main #right{
+	right:0;
+}
+#left:hover,#right:hover{
+	cursor: pointer;
+}
